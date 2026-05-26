@@ -20,10 +20,9 @@ El entorno de reproducción fue configurado en **GitHub Codespaces** compilando 
 ## Objetivos
 
 1. **Identificar en código fuente** la línea exacta donde ocurre el error de escritura prematura dentro del archivo `crypto/algif_aead.c` del kernel Linux 6.6.86.
-2. **Configurar un entorno reproducible** con dos instancias del kernel: una vulnerable (v6.6.86) y una parcheada, compiladas desde código fuente en GitHub Codespaces.
+2. **Configurar un entorno reproducible**: Una vulnerable (v6.6.86), compiladas desde código fuente en GitHub Codespaces.
 3. **Reproducir la vulnerabilidad** en el entorno vulnerable, capturando evidencia del comportamiento del sistema antes y después de la corrupción de la caché de páginas.
-4. **Proponer y aplicar una corrección** al código fuente que impida la escritura en páginas del *page cache* antes de completar la verificación HMAC.
-5. **Evaluar el impacto** de la vulnerabilidad sobre la integridad, confidencialidad y disponibilidad del sistema, y documentar sus limitaciones de detección ante herramientas convencionales.
+4. **Evaluar el impacto** de la vulnerabilidad sobre la integridad, confidencialidad y disponibilidad del sistema, y documentar sus limitaciones de detección ante herramientas convencionales.
 
 ---
 
